@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    font-family: 'Comic Sans MS', sans-serif;
+    background: linear-gradient(135deg, #fff0f5, #e6e6fa);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  header {
+    text-align: center;
+    background-color: #fdd9a9;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+    margin: 10px 0 0;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .subject-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 20px;
+  }
+  
+  .card {
+    background-color: white;
+    border-radius: 20px;
+    width: 350px;
+    height: 600px;
+    padding: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    transition: transform 0.3s;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .math { 
+    background-image: url(images/math4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+ }
+  .science { 
+    background-image: url(images/ns4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white; 
+}
+  .afrikaans { 
+    background-image: url(images/afrkns\ gpt.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white; 
+}
+  
+  .card h2 {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  
+  .card p {
+    margin-top: 10px;
+  }
+  
