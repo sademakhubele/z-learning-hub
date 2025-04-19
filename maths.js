@@ -21,3 +21,6 @@ function resetQuiz(button) {
     resultBox.textContent = "";
     button.style.display = "none";
 }
+
+
+  
