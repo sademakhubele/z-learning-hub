@@ -230,5 +230,15 @@ body {
     text-align: center;
     font-style: oblique;
   }
+
+  .refresh-button {
+    margin-top: 30px;
+    background-color: #272323;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
   
   
