@@ -240,5 +240,27 @@ body {
     cursor: pointer;
 }
 
-  
-  
+.downloads {
+  padding: 1rem;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  margin-top: 2rem;
+}
+.downloads h3 {
+  margin-bottom: 1rem;
+}
+.downloads ul {
+  list-style-type: 📄;
+  padding-left: 1.5rem;
+}
+.downloads a {
+  text-decoration: none;
+  color: #5c3b94;
+}
+
+footer {
+  background-color: #e1eef5;
+  width: 100%;
+  text-align: center;
+  font-style: oblique;
+}
