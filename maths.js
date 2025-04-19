@@ -1,24 +1,23 @@
-function checkAnswer(button, correctAnswer) {
+function checkAnswer(button) {
     const resultBox = button.parentElement.querySelector('.quiz-result');
-    const userAnswer = button.innerText.trim();
+    const refreshButton = button.parentElement.querySelector('.refresh-button');
+    
+    const isCorrect = button.dataset.correct === "true";
 
-    console.log("User Answer:", userAnswer, "| Correct Answer:", correctAnswer);
-
-
-    if (userAnswer === correctAnswer) {
+    if (isCorrect) {
         resultBox.textContent = "✅ Correct!";
         resultBox.style.color = "green";
+        refreshButton.style.display = "none";
     } else {
         resultBox.textContent = "❌ Try again!";
         resultBox.style.color = "red";
+        refreshButton.style.display = "inline-block"; 
     }
 }
-
 
 function resetQuiz(button) {
     const quizBox = button.parentElement;
     const resultBox = quizBox.querySelector('.quiz-result');
-
     resultBox.textContent = "";
-    button.style.display = "";
+    button.style.display = "none";
 }
