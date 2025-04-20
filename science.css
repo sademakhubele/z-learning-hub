@@ -1,14 +1,13 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background: url('https://media.istockphoto.com/id/1985025467/photo/transparent-molecules-with-different-angles-3d-rendering.webp?a=1&b=1&s=612x612&w=0&k=20&c=sxuT_6FpnreBqYFiNaBLVSUE7JUPTmgIRBPX76PTnFs=');
+    background: url('https://images.unsplash.com/photo-1655993810480-c15dccf9b3a0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YXRvbXxlbnwwfHwwfHx8MA%3D%3D');
     background-color: #fff9f3;
     margin: 0;
-    padding: 0;
     color: #1d1844;
 }
 
 header {
-    background-color: #b1d7e0;
+    background-color: #8fd9f0;
     color: white;
     padding: 1.5rem;
     text-align: center;
@@ -56,8 +55,8 @@ main {
 }
 
 .topic-card {
-    background-color: #d1d8e0;
-    border: 2px solid #89ad9e;
+    background-color: #6e8bad;
+    border: 2px solid #70aa92;
     border-radius: 1rem;
     padding: 1.5rem;
     margin-top: 50px;
@@ -80,7 +79,7 @@ main {
 }
 
 .thinking-bubble {
-    background-color: #cdfcf5;
+    background-color: #77b8c4;
     padding: 15px 40px;
     border-radius: 50px;
     display: inline-block;
@@ -118,7 +117,7 @@ main {
 .quiz-box button {
     margin: 0.2rem;
     padding: 0.5rem 1rem;
-    background-color: #b0c6d3;
+    background-color: #5aa2cc;
     color: white;
     border: none;
     border-radius: 0.4rem;
@@ -127,7 +126,7 @@ main {
 }
 
 .quiz-box button:hover {
-    background-color: #5aa8cc;
+    background-color: #1e485c;
 }
 
 .quiz-result {
@@ -137,7 +136,7 @@ main {
 
 .quiz-box .refresh-button {
     margin-top: 0.5rem;
-    background-color: #4b6b21 !important;
+    background-color: #7baf38 !important;
 }
 
 .quiz-box .refresh-button:hover {
@@ -148,7 +147,7 @@ a {
     display: inline-block;
     margin-top: 1rem;
     text-decoration: none;
-    color: #8d3199;
+    color: #401b63;
     font-weight: bold;
 }
 
@@ -157,7 +156,7 @@ a:hover {
 }
 
 footer {
-    background-color: #cef4fd;
+    background-color: #69acbb;
     color: rgb(4, 16, 39);
     text-align: center;
     padding: 1rem;
