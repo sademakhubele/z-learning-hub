@@ -1,13 +1,13 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background: url('https://images.unsplash.com/photo-1655993810480-c15dccf9b3a0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YXRvbXxlbnwwfHwwfHx8MA%3D%3D');
+    background: url('https://plus.unsplash.com/premium_photo-1672018756893-552e0d013622?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTA1fHxhdG9tfGVufDB8fDB8fHww');
     background-color: #fff9f3;
     margin: 0;
     color: #1d1844;
 }
 
 header {
-    background-color: #8fd9f0;
+    background-color: #bfebf8;
     color: white;
     padding: 1.5rem;
     text-align: center;
@@ -38,7 +38,6 @@ header h1 {
 .intro {
     font-size: 30px;
     color: rgb(28, 16, 51);
-    font-weight: bold;
     margin-top: 30px;
     text-align: center;
     font-style: oblique;
@@ -50,16 +49,19 @@ main {
 
 .topics {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 4rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    max-width: 1000px;
+    margin: auto;
 }
 
+
 .topic-card {
-    background-color: #6e8bad;
+    background-color: #e8f1f2;
     border: 2px solid #70aa92;
     border-radius: 1rem;
-    padding: 1.5rem;
-    margin-top: 50px;
+    padding: 25px;
+    margin-top: 40px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
     transition: transform 0.3s ease;
 }
@@ -69,17 +71,19 @@ main {
 }
 
 .topic-card h3 {
-    color: #0f8105;
+    color: #040c79;
     font-size: 1.4rem;
-    margin-top: 0;
+    margin-top: 0.9rem;
+    margin-bottom: 1rem;
 }
 
 .topic-card p {
     font-size: 0.9rem;
+    color: #401b63;
 }
 
 .thinking-bubble {
-    background-color: #77b8c4;
+    background-color: #ebf2f3;
     padding: 15px 40px;
     border-radius: 50px;
     display: inline-block;
@@ -136,11 +140,11 @@ main {
 
 .quiz-box .refresh-button {
     margin-top: 0.5rem;
-    background-color: #7baf38 !important;
+    background-color: #e279b7 !important;
 }
 
 .quiz-box .refresh-button:hover {
-    background-color: #6e8b4b !important;
+    background-color: #8b4b80 !important;
 }
 
 a {
@@ -156,9 +160,26 @@ a:hover {
 }
 
 footer {
-    background-color: #69acbb;
+    background-color: #9dd0db;
     color: rgb(4, 16, 39);
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
 }
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: inherit;
+    filter: blur(1px) brightness(1);
+    z-index: -1;
+}
+
+@media (max-width: 768px) {
+    .topics {
+        grid-template-columns: 1fr;
+    }
+}
+
+
