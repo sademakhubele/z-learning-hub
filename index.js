@@ -45,4 +45,30 @@ function speakText() {
 }
 
 window.speechSynthesis.onvoiceschanged = () => speechSynthesis.getVoices();
+
+async function lookupWord() {
+    const word = document.getElementById("wordInput").value.trim();
+    const resultBox = document.getElementById("definitionResult");
+  
+    if (!word) {
+      resultBox.innerHTML = "Please enter a word.";
+      return;
+    }
+  
+    resultBox.innerHTML = "Searching...";
+  
+    try {
+      const response = await fetch(`https://api.mymemory.translated.net/get?q=${encodeURIComponent(word)}&langpair=af|en`);
+      const data = await response.json();
+  
+      if (data.responseData.translatedText) {
+        resultBox.innerHTML = `<h4>${word}</h4><p><strong>Translation:</strong> ${data.responseData.translatedText}</p>`;
+      } else {
+        resultBox.innerHTML = "No translation found.";
+      }
+    } catch (error) {
+      console.error(error);
+      resultBox.innerHTML = "Error fetching the translation.";
+    }
+  }
   
