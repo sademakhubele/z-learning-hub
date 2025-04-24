@@ -1,5 +1,5 @@
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: sans-serif;
     background: url('https://plus.unsplash.com/premium_photo-1672018756893-552e0d013622?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTA1fHxhdG9tfGVufDB8fDB8fHww');
     background-color: #fff9f3;
     margin: 0;
@@ -80,6 +80,7 @@ main {
 .topic-card p {
     font-size: 0.9rem;
     color: #401b63;
+    margin: 15px;
 }
 
 .thinking-bubble {
@@ -109,10 +110,11 @@ main {
 }
 
 .quiz-box {
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 
 .quiz-box p {
+    margin-top: 1rem;
     margin-bottom: 0.5rem;
     font-family: monospace;
     font-size: 22px;
