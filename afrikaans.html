@@ -8,11 +8,87 @@
 <body>
     <header>
         <ul>
+            <nav>
+            <h1>Grade 9 Afrikaans</h1>
             <li><a href="index.html">🏠 Home</a></li>
             <li><a href="maths.html">➗ Maths</a></li>
             <li><a href="science.html">🔬 Natural Science</a></li>
+        </nav>
         </ul>
     </header>
+
+    <main>
+        <section>
+            <h2>Luister en Spreek Strategieë</h2>
+            <button onclick="toggleLanguage(listen-speak)">Toggle English</button>
+            <p>Oefen maak perfek! Gebruik die klankgreep hieronder en beantwoord die vrae wat volg.</p>
+            <p id="text">
+                Hallo Thabo! Wat gaan jy hierdie naweek doen? 
+                Ek wil saam met my familie na die park gaan. En jy?
+                Ek moet aan ons geskiedenisprojek werk. Dit is Maandag gereed. 
+                Ek het dit amper vergeet! Wil jy Saterdag saam daaraan werk?
+                Ja, dit sal wonderlik wees. Kom ons ontmoet by die biblioteek om 10-uur.
+              </p>
+              <button onclick="speakText()">Speel Klank</button>
+              <a href="">Laai vrae af</a>
+        </section>
+
+        <section id="literary" class="content-section">
+            <h2>Lees ’n Letterkundige tekste</h2>
+            <button onclick="toggleLanguage(listen-speak)">Toggle English</button>
+            <div class="video">
+                <iframe width="250" height="150" src="https://youtube.com/embed/UkTrpSAxYEg?si=65oy55du49utIlny" 
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+            </div>
+            <a href="">Laai Werkblad af</a>
+        </section>
+
+        <section id="transactional" class="content-section">
+            <h2>Transaksionele tekste</h2>
+            <button onclick="toggleLanguage(listen-speak)">Toggle English</button>
+            <p>Oefen om boodskappe, uitnodigings en formale briewe te skryf</p>
+            <div class="video">
+                <iframe width="250" height="150" src="https://youtube.com/embed/PBBS3BLCj1A?si=ICYikR1SfyCe4Caz" 
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+            </div>
+            <a href="">Laai Werkblad af</a>
+        </section>
+
+        <section id="poetry" class="content-section">
+            <h2>Poësie</h2>
+            <button onclick="toggleLanguage(listen-speak)">Toggle English</button>
+            <p>Begryp metafore, vergelykings en ritme</p>
+            <div class="video">
+                <iframe width="250" height="150" src="https://youtube.com/embed/YoGBjWknVow?si=M9h7gqFKnoJvJ3Wb" 
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+            </div>
+            <a href="">Laai Werkblad af</a>
+        </section>
+
+        <section id="grammer" class="content-section">
+        <h2>Taalstrukture en -konvensies</h2>
+        <button onclick="toggleLanguage(listen-speak)">Toggle English</button>
+        <p>Oefen tydsvorme, sinstrukture en woordorde</p>
+        <div class="video">
+            <iframe width="250" height="150" src="https://youtube.com/embed/playlist?list=PLymacVA4CiVGoP73EKOZDVdcMZqRK7lXv&si=-jjUanOrrsO_TsDx" 
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+        </div>
+        <a href="">Laai ekstra oefening af</a>
+    </section>
+
+    </main>
     
 </body>
 </html>
