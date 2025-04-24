@@ -22,5 +22,27 @@ function resetQuiz(button) {
     button.style.display = "none";
 }
 
+//afrikaans
+function toggleLanguage(sectionId) {
+    const section = document.getElementById(sectionId);
+    section.classList.toggle('show-english')
+}
 
+function speakText() {
+    const text = document.getElementById('text').innerText;
+    const utterance = new SpeechSynthesisUtterance(text);
+
+    const voices = speechSynthesis.getVoices();
+    const afVoice = voices.find(v => v.lang.includes('af'));
+
+    if (afVoice) {
+        utterance.voice = afVoice;
+    } else {
+        alert('Afrikaans stem nie beskikbaar op hierdie toestel nie.');
+    }
+
+    speechSynthesis.speak(utterance);
+}
+
+window.speechSynthesis.onvoiceschanged = () => speechSynthesis.getVoices();
   
