@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grade 9 Afrikaans</title>
+    <script src="index.js"></script>
 </head>
 <body>
     <header>
@@ -22,6 +23,13 @@
             <h2 class="thinking-bubble">Term 2 Tutorials</h2>
                 <p class="intro">Leer Afrikaans Addisionele Taal  ’n<br> laai Werkblad</p>
         </section>
+
+        <div id="dictionarySidebar" class="sidebar">
+            <h3>Dictionary</h3>
+            <input type="text" id="wordInput" placeholder="Enter word..." />
+            <button onclick="lookupWord()">Search</button>
+            <div id="definitionResult"></div>
+          </div>
 
         <section id="listen-speak" class="content-section">
             <h2>Luister en Spreek Strategieë</h2>
