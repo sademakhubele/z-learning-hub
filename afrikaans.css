@@ -1,0 +1,157 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f5ff;
+}
+
+header {
+  background-color: #6a1b9a;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.intro-section {
+  background-color: #f3e5f5;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.intro-section h2 {
+  color: #6a1b9a;
+  margin-bottom: 10px;
+}
+
+.intro {
+  font-size: 18px;
+  color: #444;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.afrikaans-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.thinking-bubble {
+  background-color: #d2e5fd;
+  padding: 5px 10px;
+  border-radius: 50px;
+  display: inline-block;
+  position: relative;
+  font-size: 1.8rem;
+  min-width: 80%;
+  margin: 30px auto;
+  box-shadow: 2px 4px 10px rgba(0,0,0,0.1);
+  border: 2px dashed #0d3a64;
+  text-align: center;     
+  display: flex;           
+  justify-content: center;     
+  align-items: center;
+}
+
+.topic-card h2 {
+  color: #0f0f11;
+  font-size: 1.4rem;
+  margin-top: 0.9rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.topic-card p {
+  font-size: 1rem;
+  color: #111011;
+  margin: 15px;
+  text-align: center;
+}
+
+.topic-card {
+  background-color: #ecc8fa;
+  border: 2px solid #2f40a3;
+  border-radius: 1rem;
+  padding: 25px;
+  margin-top: 40px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+  transition: transform 0.3s ease;
+}
+
+.topic-card:hover {
+  transform: scale(1.02);
+}
+
+button {
+  margin: 0.2rem;
+  padding: 0.5rem 1rem;
+  background-color: #5aa2cc;
+  color: rgb(27, 27, 29);
+  border: 1px solid blue;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+main {
+  padding: 40px;
+}
+
+.main-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.video {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.video iframe {
+  border-radius: 0.5rem;
+}
+
+.page-layout {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.afrikaans-content {
+  flex: 3;
+}
+
+.sidebar {
+  flex: 1;
+  background-color: #f3e5f5;
+  padding: 20px;
+  border-radius: 12px;
+  border: 2px solid #d1c4e9;
+  height: fit-content;
+  position: sticky;
+  top: 30px;
+  height: 900px;
+}
