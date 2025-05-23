@@ -4,10 +4,11 @@ body {
     background-color: #fff9f3;
     margin: 0;
     color: #1d1844;
+    overflow-x: hidden;
 }
 
 header {
-    background-color: #bfebf8;
+    background-color: #8ccde0;
     color: white;
     padding: 1.5rem;
     text-align: center;
@@ -47,6 +48,13 @@ main {
     padding: 2rem;
 }
 
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+
 .topics {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -57,8 +65,8 @@ main {
 
 
 .topic-card {
-    background-color: #e8f1f2;
-    border: 2px solid #70aa92;
+    background-color: #a1fa86;
+    border: 2px solid #2f40a3;
     border-radius: 1rem;
     padding: 25px;
     margin-top: 40px;
@@ -75,6 +83,7 @@ main {
     font-size: 1.4rem;
     margin-top: 0.9rem;
     margin-bottom: 1rem;
+    text-align: center;
 }
 
 .topic-card p {
@@ -84,7 +93,7 @@ main {
 }
 
 .thinking-bubble {
-    background-color: #ebf2f3;
+    background-color: #fff8b4;
     padding: 15px 40px;
     border-radius: 50px;
     display: inline-block;
@@ -93,7 +102,7 @@ main {
     min-width: 80%;
     margin: 30px auto;
     box-shadow: 2px 4px 10px rgba(0,0,0,0.1);
-    border: 2px dashed #8cbeee;
+    border: 2px dashed #0d3a64;
     text-align: center;     
     display: flex;           
     justify-content: center;     
@@ -125,7 +134,7 @@ main {
     padding: 0.5rem 1rem;
     background-color: #5aa2cc;
     color: white;
-    border: none;
+    border: 1px soid blue;
     border-radius: 0.4rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -142,11 +151,11 @@ main {
 
 .quiz-box .refresh-button {
     margin-top: 0.5rem;
-    background-color: #e279b7 !important;
+    background-color: #3026c7 !important;
 }
 
 .quiz-box .refresh-button:hover {
-    background-color: #8b4b80 !important;
+    background-color: #7072c2 !important;
 }
 
 a {
