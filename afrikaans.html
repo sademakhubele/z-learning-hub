@@ -34,6 +34,8 @@
             <div class="topic-card">
                 <h2>Luister en Spreek Strategieë</h2>
                 <button onclick="toggleLanguage('listen-speak')">Toggle English</button>
+
+                <div class="text-afrikaans">
                 <p>Oefen maak perfek! Gebruik die klankgreep hieronder en beantwoord die vrae wat volg.</p>
                 <div id="text">
                     Hallo Thabo! Wat gaan jy hierdie naweek doen? 
@@ -42,16 +44,37 @@
                     Ek het dit amper vergeet! Wil jy Saterdag saam daaraan werk?
                     Ja, dit sal wonderlik wees. Kom ons ontmoet by die biblioteek om 10-uur.
                 </div>
-                <button onclick="speakText()">Speel Klank</button>
-                <a href="">Laai vrae af</a>
-            </div>
+                </div>
+
+      <div class="text-english">
+      <p>Practice makes perfect! Use the audio clip below and answer the questions.</p>
+      <div>
+        Hello Thabo! What are you doing this weekend?
+        I want to go to the park with my family. And you?
+        I must work on our history project. It’s due Monday.
+        I almost forgot! Want to work on it together on Saturday?
+        Yes, that would be great. Let’s meet at the library at 10 o’clock.
+      </div>
+    </div>
+
+        <button onclick="speakText()">Speel Klank</button>
+        <a href="">Laai vrae af</a>
+        </div>
         </section>
 
         <section id="literary" class="content-section">
             <div class="topic-card">
                 <h2>Lees ’n Letterkundige Tekste</h2>
                 <button onclick="toggleLanguage('literary')">Toggle English</button>
+
+                <div class="text-afrikaans">
+                    <p>Kyk die video en bespreek wat jy verstaan het.</p>
+                    </div>
+                    <div class="text-english">
+                    <p>Watch the video and discuss what you understood.</p>
+                   </div>
                 <div class="video">
+
                     <iframe width="350" height="150" src="https://www.youtube.com/embed/UkTrpSAxYEg" 
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
@@ -65,7 +88,14 @@
             <div class="topic-card">
                 <h2>Transaksionele Tekste</h2>
                 <button onclick="toggleLanguage('transactional')">Toggle English</button>
+
+                <div class="text-afrikaans">
                 <p>Oefen om boodskappe, uitnodigings en formale briewe te skryf</p>
+                </div>
+                <div class="text-english">
+                <p>Practice writing messages, invitations, and formal letters.</p>
+                </div>
+
                 <div class="video">
                     <iframe width="350" height="150" src="https://www.youtube.com/embed/PBBS3BLCj1A" 
                         title="YouTube video player" frameborder="0"
@@ -80,7 +110,14 @@
             <div class="topic-card">
                 <h2>Poësie</h2>
                 <button onclick="toggleLanguage('poetry')">Toggle English</button>
+
+                <div class="text-afrikaans">
                 <p>Begryp metafore, vergelykings en ritme</p>
+                </div>
+                <div class="text-english">
+                <p>Understand metaphors, similes, and rhythm.</p>
+                </div>
+
                 <div class="video">
                     <iframe width="350" height="150" src="https://www.youtube.com/embed/YoGBjWknVow" 
                         title="YouTube video player" frameborder="0"
@@ -95,7 +132,14 @@
             <div class="topic-card">
                 <h2>Taalstrukture en -konvensies</h2>
                 <button onclick="toggleLanguage('grammar')">Toggle English</button>
+
+                <div class="text-afrikaans">
                 <p>Oefen tydsvorme, sinstrukture en woordorde</p>
+                </div>
+                <div class="text-english" style="display: none;">
+                <p>Practice tenses, sentence structure, and word order.</p>
+                </div>
+                
                 <div class="video">
                     <iframe width="350" height="150" src="https://www.youtube.com/embed/videoseries?list=PLymacVA4CiVGoP73EKOZDVdcMZqRK7lXv" 
                         title="YouTube video player" frameborder="0"
